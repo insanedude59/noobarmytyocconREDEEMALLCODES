@@ -1,0 +1,23 @@
+while wait() do
+    local codes = {
+    "10M",
+    "7Tp6Mz",
+    "Vk3d5E",
+    "EQd57f",
+    "2G2upS",
+    "NOOB",
+    "free money",
+    "free research points",
+    "🙂",
+    "lol",
+    "noob",
+    "noob2"
+}
+
+local Redeem = game:GetService("ReplicatedStorage").Remotes.Code
+
+for _, event in pairs(codes) do
+    wait(0.5)
+    Redeem:InvokeServer(event)
+    end
+end
